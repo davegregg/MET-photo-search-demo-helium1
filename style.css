@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 229, 219);
+}
+
+h1 {
+    border-left: 3rem solid darksalmon;
+    padding-left: 1rem;
+}
+
+h1::after {
+    content: "📷"; /* Hmm... What is this doing? Hint: Try adding more H1 tags to the page. */
+}
+
+.wavy-underline {
+    text-decoration: 0.25rem lightsalmon wavy underline;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem solid lightsalmon;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+main img {
+    margin: 0.5rem;
+    border: 0.5rem solid black;
+    height: min-content;
+    width: min-content;
+}
